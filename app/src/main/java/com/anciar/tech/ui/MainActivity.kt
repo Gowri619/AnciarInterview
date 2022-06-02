@@ -28,9 +28,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getResponseString() {
-        responseString =
-            applicationContext.assets.open("response.json").bufferedReader().use { it.readText() }
-        Log.e("test", responseString)
+        responseString = applicationContext.assets.open("response.json").bufferedReader().use { it.readText() }
     }
 
     private fun setEpoxyData() {
